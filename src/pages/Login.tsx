@@ -5,8 +5,8 @@ import { loginSchema as schema } from "../schema/schema";
 export const Login = () => {
   return (
     <FormWrapper schema={schema}>
-      <Input name="email" placeholder="email" />
-      <Input name="password" type="password" placeholder="password" />
+      <Input name="email" placeholder="not an email" />
+      <Input name="password" type="password" placeholder="not a password" />
     </FormWrapper>
   );
 };
