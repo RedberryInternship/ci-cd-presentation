@@ -28,7 +28,7 @@ export default function App() {
     const schema = z.promise(z.string());
     schema.parseAsync(myData).then(log);
 
-    let parsedData = myData2.safeParse("9090").success;
+    const parsedData = myData2.safeParse("9090").success;
 
     const fileSchema = z
       .instanceof(File)
